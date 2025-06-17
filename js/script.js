@@ -11,15 +11,18 @@ let arr = []
 
 // 3rd Part 
 function display(){
+    pustAll.innerHTML = ""
     arr.map((item)=>{
-        pustAll.innerHTML += `  <div class="card mt-5" style="width: 18rem;">
+        pustAll.innerHTML += `<div class="col-lg-3">
+            <div class="card mt-5" style="width: 18rem;">
             <div class="card-body">
                 <h5 class="card-title">${item.name}</h5>
                 <p class="card-text">${item.description}</p>
                 <a href="#" class="btn btn-primary">Edit</a>
                 <a href="#" class="btn btn-danger">Delete</a>
             </div>
-            </div>`
+            </div> 
+        </div>` 
     })
 }
 
